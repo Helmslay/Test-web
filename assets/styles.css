@@ -470,3 +470,32 @@
     overflow-wrap: anywhere;
   }
 }
+ 
+/* Mobile fix: keep the individual-page question callout inside the viewport */
+@media (max-width: 720px) {
+  body.page-individual-page .page-individual .subhero-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 22px;
+  }
+
+  body.page-individual-page .page-individual .subhero-grid > *,
+  body.page-individual-page .page-individual .subhero-aside {
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  body.page-individual-page .page-individual .subhero-aside {
+    padding: 18px 17px;
+    overflow-wrap: anywhere;
+  }
+
+  body.page-individual-page .page-individual .subhero-aside strong,
+  body.page-individual-page .page-individual .subhero-aside p {
+    min-width: 0;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+}
+
