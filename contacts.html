@@ -29,8 +29,8 @@
 <main id="main-content">
 <section class="subhero"><div class="container">
   <div class="breadcrumbs"><a href="index.html">Главная</a><span>/</span><span>Контакты и запись</span></div>
-  <div class="subhero-grid"><div><div class="eyebrow">Связаться</div><h1>Давайте <span style="color:var(--sage-deep);font-style:italic">обсудим</span> встречу</h1><p class="lead">Оставьте удобный контакт и необязательное уточнение. Татьяна свяжется с вами, чтобы ответить на вопросы и согласовать условия.</p></div>
-  <aside class="subhero-aside"><strong>Запрос — ещё не запись</strong><p>Время и условия встречи подтверждаются лично Татьяной после получения обращения.</p></aside></div>
+  <div class="subhero-grid"><div><div class="eyebrow">Связаться</div><h1>Давайте <span style="color:var(--sage-deep);font-style:italic">обсудим</span> встречу</h1><p class="lead">На этой странице показан предварительный макет будущего способа связи. Рабочие контакты и отправка заявок появятся после согласования с Татьяной.</p></div>
+  <aside class="subhero-aside"><strong>Форма пока не работает</strong><p>Сейчас это только демонстрация интерфейса: данные не отправляются и не сохраняются.</p></aside></div>
 </div></section>
 <section class="section"><div class="container">
   <div class="contact-methods">
@@ -43,15 +43,15 @@
   <div class="contact-info"><div class="eyebrow">Перед отправкой</div><h2>Что важно знать</h2><p>Для первого обращения достаточно имени и одного способа связи. Не нужно описывать диагноз, травматический опыт или подробности личной истории.</p>
     <div class="contact-details"><div><strong>Продолжительность</strong><span>Индивидуальные встречи — от 1 часа.</span></div><div><strong>Стоимость</strong><span>Уточняется до согласования встречи.</span></div><div><strong>Ответ на заявку</strong><span>Срок ответа необходимо отдельно подтвердить у Татьяны.</span></div></div>
   </div>
-  <form class="form-card" id="contact-form"><h3>Оставить запрос</h3><p class="form-intro">Поля со звёздочкой обязательны. Форма демонстрационная и пока не отправляет данные.</p>
+  <form class="form-card" id="contact-form"><h3>Макет формы обращения</h3><p class="form-intro">Поля показывают предполагаемую структуру будущей формы. Сейчас отправка заявок не подключена.</p>
     <div class="form-grid">
-      <div class="field"><label for="name">Как к вам обращаться *</label><input id="name" name="name" autocomplete="name" required maxlength="80" placeholder="Ваше имя"></div>
-      <div class="field"><label for="contact-method">Как с вами связаться *</label><input id="contact-method" name="contact" required maxlength="120" placeholder="Телефон или мессенджер"></div>
+      <div class="field"><label for="name">Как к вам обращаться *</label><input id="name" name="name" autocomplete="off" required maxlength="80" placeholder="Тестовое имя"></div>
+      <div class="field"><label for="contact-method">Как с вами связаться *</label><input id="contact-method" name="contact" autocomplete="off" required maxlength="120" placeholder="Тестовый контакт"></div>
       <div class="field full"><label for="interest">Что вас интересует? (необязательно)</label><select id="interest" name="interest"><option value="">Пока не определился(лась)</option><option>Индивидуальная консультация</option><option>Регрессия</option><option>Расстановки</option><option>Групповой формат</option><option>Организационный вопрос</option></select></div>
       <div class="field full"><label for="city">Предпочтительный формат (необязательно)</label><select id="city" name="city"><option value="">Пока не знаю</option><option>Лично — Лысьва</option><option>Лично — Пермь</option><option>Онлайн</option></select></div>
     </div>
-    <label class="form-foot"><input type="checkbox" required><span>Я согласен(на) на обработку контактных данных для ответа на мой запрос. В рабочей версии здесь будет ссылка на политику конфиденциальности.</span></label>
-    <button class="button button-primary" type="submit">Отправить запрос <span aria-hidden="true">↗</span></button><p class="form-message" id="form-message" role="status" aria-live="polite"></p>
+    <div class="demo-form-notice" role="note">Демонстрационный макет: данные не отправляются и не сохраняются. Не вводите настоящие контакты или личные сведения.</div>
+    <button class="button button-primary" type="submit">Проверить макет <span aria-hidden="true">↗</span></button><p class="form-message" id="form-message" role="status" aria-live="polite"></p>
   </form>
 </div></section>
 </main><footer class="footer"><div class="container footer-inner">
