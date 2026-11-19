@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f3ed">
+  <meta name="description" content="Контакты и запрос на встречу с Татьяной Лапиной.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Контакты и запись — Татьяна Лапина">
+  <meta property="og:description" content="Контакты и запрос на встречу с Татьяной Лапиной.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <title>Контакты и запись — Татьяна Лапина</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head><body>
+  <a class="skip-link" href="#main-content">Перейти к основному содержимому</a><header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="Татьяна Лапина — на главную"><span class="brand-name">Татьяна Лапина</span><span class="brand-caption">Личная практика</span></a>
+    <nav class="nav" id="main-nav" aria-label="Основная навигация">
+      <a href="about.html">О Татьяне</a><a href="individual.html">Направления</a><a href="groups.html">Форматы</a><a href="index.html#faq">Вопросы</a><a href="contacts.html" aria-current="page">Контакты</a>
+    </nav>
+    <a class="button button-primary header-action" href="contacts.html">Обсудить встречу <span aria-hidden="true">↗</span></a>
+    <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-controls="main-nav" aria-expanded="false"><i></i></button>
+  </div>
+</header>
+<main id="main-content">
+<section class="subhero"><div class="container">
+  <div class="breadcrumbs"><a href="index.html">Главная</a><span>/</span><span>Контакты и запись</span></div>
+  <div class="subhero-grid"><div><div class="eyebrow">Связаться</div><h1>Давайте <span style="color:var(--sage-deep);font-style:italic">обсудим</span> встречу</h1><p class="lead">Оставьте удобный контакт и необязательное уточнение. Татьяна свяжется с вами, чтобы ответить на вопросы и согласовать условия.</p></div>
+  <aside class="subhero-aside"><strong>Запрос — ещё не запись</strong><p>Время и условия встречи подтверждаются лично Татьяной после получения обращения.</p></aside></div>
+</div></section>
+<section class="section"><div class="container">
+  <div class="contact-methods">
+    <article class="contact-method"><strong>Лысьва</strong><p>Очные встречи. Точный адрес сообщается при согласовании.</p></article>
+    <article class="contact-method"><strong>Пермь</strong><p>Очные встречи. Точный адрес сообщается при согласовании.</p></article>
+    <article class="contact-method"><strong>Онлайн</strong><p>Индивидуальные встречи и групповые видеоконференции.</p></article>
+  </div>
+</div></section>
+<section class="section" style="padding-top:10px"><div class="container contact-grid">
+  <div class="contact-info"><div class="eyebrow">Перед отправкой</div><h2>Что важно знать</h2><p>Для первого обращения достаточно имени и одного способа связи. Не нужно описывать диагноз, травматический опыт или подробности личной истории.</p>
+    <div class="contact-details"><div><strong>Продолжительность</strong><span>Индивидуальные встречи — от 1 часа.</span></div><div><strong>Стоимость</strong><span>Уточняется до согласования встречи.</span></div><div><strong>Ответ на заявку</strong><span>Срок ответа необходимо отдельно подтвердить у Татьяны.</span></div></div>
+  </div>
+  <form class="form-card" id="contact-form"><h3>Оставить запрос</h3><p class="form-intro">Поля со звёздочкой обязательны. Форма демонстрационная и пока не отправляет данные.</p>
+    <div class="form-grid">
+      <div class="field"><label for="name">Как к вам обращаться *</label><input id="name" name="name" autocomplete="name" required maxlength="80" placeholder="Ваше имя"></div>
+      <div class="field"><label for="contact-method">Как с вами связаться *</label><input id="contact-method" name="contact" required maxlength="120" placeholder="Телефон или мессенджер"></div>
+      <div class="field full"><label for="interest">Что вас интересует? (необязательно)</label><select id="interest" name="interest"><option value="">Пока не определился(лась)</option><option>Индивидуальная консультация</option><option>Регрессия</option><option>Расстановки</option><option>Групповой формат</option><option>Организационный вопрос</option></select></div>
+      <div class="field full"><label for="city">Предпочтительный формат (необязательно)</label><select id="city" name="city"><option value="">Пока не знаю</option><option>Лично — Лысьва</option><option>Лично — Пермь</option><option>Онлайн</option></select></div>
+    </div>
+    <label class="form-foot"><input type="checkbox" required><span>Я согласен(на) на обработку контактных данных для ответа на мой запрос. В рабочей версии здесь будет ссылка на политику конфиденциальности.</span></label>
+    <button class="button button-primary" type="submit">Отправить запрос <span aria-hidden="true">↗</span></button><p class="form-message" id="form-message" role="status" aria-live="polite"></p>
+  </form>
+</div></section>
+</main><footer class="footer"><div class="container footer-inner">
+  <div><a class="brand" href="index.html"><span class="brand-name">Татьяна Лапина</span><span class="brand-caption">Личная практика</span></a><div class="footer-copy" style="margin-top:12px">© <span id="year"></span> Татьяна Лапина</div></div>
+  <div class="footer-links"><a href="about.html">О специалисте</a><a href="individual.html">Направления</a><a href="contacts.html">Контакты</a></div>
+</div></footer>
+<button class="chat-button" id="chat-toggle" type="button" aria-expanded="false" aria-controls="chat-panel"><span class="chat-dot"></span> Помощник сайта</button>
+<div class="chat-panel" id="chat-panel" role="region" aria-label="Демонстрация помощника сайта"><strong>Помощник сайта</strong><p>Это демонстрация расположения будущего чата. Автоматические ответы и передача обращения Татьяне будут добавлены отдельно.</p><button type="button" id="chat-close">Закрыть окно</button></div>
+<div class="demo-tag">Демонстрационный прототип</div>
+<script src="assets/app.js" defer></script></body></html>
