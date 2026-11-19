@@ -374,7 +374,6 @@
 .skip-link:focus { top:12px; }
 .anchor-target { position:absolute; top:0; left:0; }
 
-
 /* Mobile fit: individual directions page only */
 @media (max-width: 440px) {
   .page-individual .subhero h1 {
