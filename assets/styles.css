@@ -373,3 +373,60 @@
 }
 .skip-link:focus { top:12px; }
 .anchor-target { position:absolute; top:0; left:0; }
+
+
+/* Mobile fit: individual directions page only */
+@media (max-width: 440px) {
+  .page-individual .subhero h1 {
+    font-size: clamp(2.15rem, 10vw, 2.8rem);
+    line-height: 1.08;
+  }
+
+  .page-individual .service-detail {
+    grid-template-columns: 32px minmax(0, 1fr);
+    gap: 12px;
+    padding: 20px 17px;
+  }
+
+  .page-individual .service-detail > div:last-child {
+    min-width: 0;
+  }
+
+  .page-individual .service-detail .eyebrow {
+    gap: 8px;
+    font-size: 9px;
+    letter-spacing: .11em;
+  }
+
+  .page-individual .detail-facts {
+    gap: 7px;
+  }
+
+  .page-individual .detail-facts span {
+    max-width: 100%;
+    padding: 6px 9px;
+    font-size: 10px;
+    overflow-wrap: anywhere;
+  }
+
+  .page-individual .note-panel {
+    padding: 19px 20px;
+  }
+
+  .page-individual .process-card {
+    min-width: 0;
+    padding: 21px;
+  }
+}
+
+@media (max-width: 360px) {
+  .page-individual .subhero h1 {
+    font-size: clamp(2.1rem, 10vw, 2.35rem);
+  }
+
+  .page-individual .service-detail {
+    grid-template-columns: 29px minmax(0, 1fr);
+    gap: 10px;
+    padding: 18px 15px;
+  }
+}
