@@ -430,3 +430,43 @@
     padding: 18px 15px;
   }
 }
+
+
+/* Prevent tiny horizontal page drift on phones: directions page only */
+@media (max-width: 720px) {
+  html:has(body.page-individual-page) {
+    overflow-x: clip;
+  }
+
+  body.page-individual-page {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: clip;
+  }
+
+  body.page-individual-page .page-individual {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    overflow-x: clip;
+  }
+
+  body.page-individual-page .page-individual .container,
+  body.page-individual-page .page-individual .subhero-grid,
+  body.page-individual-page .page-individual .service-detail-list,
+  body.page-individual-page .page-individual .service-detail,
+  body.page-individual-page .page-individual .process-grid,
+  body.page-individual-page .page-individual .process-card {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  body.page-individual-page .page-individual h1,
+  body.page-individual-page .page-individual h2,
+  body.page-individual-page .page-individual h3,
+  body.page-individual-page .page-individual p,
+  body.page-individual-page .page-individual a,
+  body.page-individual-page .page-individual span {
+    overflow-wrap: anywhere;
+  }
+}
