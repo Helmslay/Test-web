@@ -88,7 +88,7 @@
       event.preventDefault();
       var message = document.getElementById("form-message");
       if (message) {
-        message.textContent = "Это демонстрационная форма: данные не отправлены и нигде не сохранены.";
+        message.textContent = "Проверка макета завершена: данные не отправлены и не сохранены.";
       }
       form.reset();
     });
