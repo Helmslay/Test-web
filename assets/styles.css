@@ -603,30 +603,6 @@
   object-fit: cover;
   object-position: center 28%;
 }
-.about-photo-detail {
-  position: absolute;
-  z-index: 2;
-  right: -12px;
-  bottom: 0;
-  width: 174px;
-  height: 226px;
-  margin: 0;
-  padding: 8px;
-  overflow: hidden;
-  border: 1px solid rgba(215,217,210,.9);
-  border-radius: 16px;
-  background: var(--surface);
-  box-shadow: var(--shadow);
-  transform: rotate(2deg);
-}
-.about-photo-detail img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  object-fit: cover;
-  object-position: center 52%;
-}
 .individual-aside-photo {
   display: block;
   width: calc(100% + 52px);
@@ -647,12 +623,6 @@
   .about-photo-main {
     height: 430px;
   }
-  .about-photo-detail {
-    right: -5px;
-    bottom: -2px;
-    width: 140px;
-    height: 182px;
-  }
   .individual-aside-photo {
     width: calc(100% + 42px);
     height: 230px;
@@ -662,8 +632,7 @@
 @media (max-width: 380px) {
   .about-story-visual { min-height: 410px; }
   .about-photo-main { height: 380px; }
-  .about-photo-detail { width: 116px; height: 154px; }
-}
+  }
 
 /* Transparent portrait treatment: no rings, no hard photo frames */
 .portrait-card,
@@ -728,28 +697,6 @@
   object-position: center bottom !important;
   filter: drop-shadow(0 16px 26px rgba(40,49,45,.10));
 }
-.about-photo-detail {
-  right: -10px;
-  bottom: 4px;
-  width: 142px;
-  height: 205px;
-  margin: 0 !important;
-  padding: 0 !important;
-  overflow: visible !important;
-  border: 0 !important;
-  border-radius: 0 !important;
-  background: transparent !important;
-  box-shadow: none !important;
-  transform: none !important;
-}
-.about-photo-detail img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  border-radius: 0 !important;
-  object-fit: contain !important;
-  filter: drop-shadow(0 12px 20px rgba(40,49,45,.11));
-}
 .individual-aside-photo {
   display: block;
   width: 100% !important;
@@ -768,17 +715,10 @@
     margin: 0 auto;
   }
   .about-photo-main { height: 470px; }
-  .about-photo-detail {
-    right: 0;
-    bottom: 0;
-    width: 122px;
-    height: 176px;
-  }
   .individual-aside-photo { height: 220px; }
 }
 @media (max-width: 380px) {
   .about-story-visual { min-height: 420px; }
   .about-photo-main { height: 410px; }
-  .about-photo-detail { width: 104px; height: 150px; }
-}
+  }
 
