@@ -565,7 +565,7 @@
   height: 100%;
   object-fit: cover;
   object-position: center 39%;
-  filter: saturate(.88);
+  filter: saturate(.88) drop-shadow(0 16px 26px rgba(40,49,45,.12));
 }
 @media (max-width: 720px) {
   .hero-portrait {
